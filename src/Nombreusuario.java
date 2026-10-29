@@ -1,11 +1,7 @@
 import java.util.Locale;
-import java.util.Scanner;
-
 public class Nombreusuario {
     static void main() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Introduce el nombre y apellidos: ");
-        String nombre = sc.nextLine();
+        String nombre = "JuaN PErez GarcIA";
         String [] palabras = nombre.trim().split(" ");
         String nombreformateado = "";
 
@@ -24,7 +20,8 @@ public class Nombreusuario {
 
         String usuario = "";
         usuario = palabras[0].substring(0,1).toLowerCase();
-        usuario += palabras[1].toLowerCase() + " ";
+        usuario += palabras[1].toLowerCase() ;
+        usuario += palabras[2].substring(0,1).toLowerCase() + " ";
 
 
         System.out.println(usuario);
